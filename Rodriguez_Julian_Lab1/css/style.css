@@ -1,0 +1,28 @@
+body{
+	font-family:helvetica;
+	background-color:#8E8E8E;
+	background-image:url('../img/shattered-island.gif');
+}
+
+fieldset{
+	margin:0 auto;
+	width:600px;
+	background-color:#EDEDED;
+}
+
+fieldset p input{
+	width:400px;
+	height:25px;
+	font-size:14px;
+	margin:0 0 10px 0;
+}
+
+fieldset p #submit{
+	width:406px;
+	height:30px;
+	font-size:14px;
+	margin:0 0 10px 0;
+	background-color:#668AB2;
+	color:#FFF;
+	border:none;
+}
