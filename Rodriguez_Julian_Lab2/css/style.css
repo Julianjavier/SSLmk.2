@@ -1,0 +1,66 @@
+body{
+	font-family:helvetica;
+	background-color:#8E8E8E;
+	background-image:url('../img/shattered-island.gif');
+}
+
+fieldset{
+	margin:0 auto;
+	width:600px;
+	background-color:#54577F;
+}
+
+fieldset p .input{
+	width:99%;
+	height:40px;
+	font-size:14px;
+	color:#fff;
+	margin:0 0 10px 0;
+	padding:4px;
+	border:none;
+	outline:#FFF solid 2px;
+	background-color:#54577F;
+}
+
+fieldset p .file{
+	width:100%;
+	font-size:14px;
+	color:#fff;
+	margin:0 0 10px 0;
+}
+
+*::-webkit-input-placeholder {
+   color: #fff;
+}
+
+*:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+*::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+*:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+fieldset p #submit{
+	width:100%;
+	height:30px;
+	font-size:14px;
+	margin:0 0 10px 0;
+	background-color:#668AB2;
+	color:#FFF;
+	border:none;
+	outline:none;
+}
+
+img{
+	margin:10px 20px 0 0;
+	float:left;
+}
+
+h2, h4{
+	color:#fff;
+}

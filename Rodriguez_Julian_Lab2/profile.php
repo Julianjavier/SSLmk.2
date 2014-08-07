@@ -35,7 +35,7 @@ session_start();
     		<fieldset>
 					<img src =<? echo $_SESSION['uploadfile'].".thumb.jpg" ?>> 
 					<h2><? echo $_SESSION['userName'] ?> </h2> 
-					<h4><? echo $_SESSION['passWord'] ?> </h2> 
+					<h4><? echo $_SESSION['passWord'] ?> </h4> 
 		
 			</fieldset>
         </div>
