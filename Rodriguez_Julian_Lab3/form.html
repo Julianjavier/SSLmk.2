@@ -1,0 +1,12 @@
+<?
+session_start();
+$_SESSION['login'] = FALSE;
+var_dump($_SESSION['login']);
+?>
+<html>
+	<form action="check.php" method="post">
+		<input type="text" name="username">
+		<input type="text" name="password">
+		<input type="submit" name="submit">
+	</form>	
+</html>
