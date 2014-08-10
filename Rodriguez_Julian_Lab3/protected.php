@@ -17,7 +17,6 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-<head>
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style.css">    
 </head>
@@ -27,6 +26,7 @@ session_start();
     				<h2><? echo $_SESSION["message"] ?></h2>
 					<img src =<? echo $_SESSION['avatar']?>> 
 					<h2><? echo $_SESSION['username'] ?> </h2> 
+
 					<form action="" method="post">
 						<input type="submit" name="logout">
 					</form>	
