@@ -7,6 +7,8 @@ session_start();
 			$_SESSION['login'] = FALSE;
 			header('Location: index.html');
 		}
+	} elseif (!isset($_SESSION['login'])) {
+			header('Location: index.html');
 	};
 
 	if($_POST){
