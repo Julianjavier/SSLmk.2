@@ -23,11 +23,12 @@ if($_POST){
 					$_SESSION['avatar'] = $img_result;
 					$_SESSION['login'] = TRUE;
 					header('Location: protected.php');
-
+				}else{
+					header('Location: index.html');
 				}
-			}
 		}else{
 			header('Location: index.html');
 		}
+	}
 }
 ?>
