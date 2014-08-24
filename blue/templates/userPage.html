@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <fieldset>
+
+            {{session["loggedin"]}}
+
+            {% if session["loggedin"] == True %}
+            <a href="/logout">LOGOUT</a>
+            {% else %}
+            <a href="/login">LOGIN</a>
+            {% endif %}
+
+            {% for item in pagedata %}
+
+                <h4>{{ item[0] }} / {{ item[1] }} <a href="/update&id={{item[2]}}">UPDATE</a> || <a href="/deleteaction/{{item[2]}}">DELETE</a></h4>
+
+            {% endfor %}
+
+
+        </fieldset>
+    </div>
+</body>

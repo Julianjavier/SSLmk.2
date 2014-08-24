@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<div class="wrapper">
+        {{session["loggedin"]}}
+
+        <fieldset>
+            <form action="/loginaction" method="POST">
+                <p><input class="input" type="text" name="userName" placeholder= "User Name:"></p>
+                <p><input class="input" type="text" name="passWord" placeholder= "Password:"></p>
+                <p><input class="submit" id="submit" type="submit" ></p>
+            </form>
+        </fieldset>
+</div>
+
+</body>
+</html>

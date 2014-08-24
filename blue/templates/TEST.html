@@ -1,0 +1,49 @@
+<html>
+<body>
+
+{% if session["loggedin"] == 1 %}
+<a href="/logout">LOGOUT</a><br/>
+
+{% else %}
+<a href="/loginform">LOGIN</a><br/>
+{% endif %}
+
+	<form action="/addaction" method="post">
+		<input type="text" name="name" />
+		<input type="text" name="color" />
+		<input type="submit" />
+	</form>
+</body>
+</html>
+
+loginform.html
+
+<html>
+<body>
+	<form action="/loginaction" method="post">
+		<input type="text" name="username" />
+		<input type="text" name="password" />
+		<input type="submit" />
+	</form>
+</body>
+</html>
+
+body.html
+
+<html>
+<body>
+{{session["loggedin"]}}
+
+{% if session["loggedin"] == 1 %}
+<a href="/logout">LOGOUT</a><br/>
+
+{% else %}
+<a href="/loginform">LOGIN</a><br/>
+{% endif %}
+
+	{% for item in pagedata %}
+		Name: {{item[0]}}
+		Color: {{item[1]}}<br/>
+	{% endfor %}
+</body>
+</html>

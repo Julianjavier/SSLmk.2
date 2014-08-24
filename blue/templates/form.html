@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        {{session["loggedin"]}}
+
+        {% if session["loggedin"] == True %}
+        <a href="/logout">LOGOUT</a>
+        {% else %}
+        <a href="/loginform">LOGIN</a>
+        {% endif %}
+
+        <fieldset>
+            <form action="/addaction" method="POST">
+                <p><input class="input" type="text" name="name" placeholder= "Fruit Name:"></p>
+                <p><input class="input" type="text" name="color" placeholder= "Color:"></p>
+                <p><input class="submit" id="submit" type="submit" ></p>
+            </form>
+        </fieldset>
+    </div>
+</body>
