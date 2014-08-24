@@ -1,0 +1,34 @@
+header{
+	height:120px;
+	background-image: url('../img/shattered-island.gif');
+}
+
+body{
+	font-family:helvetica;
+	margin:0;
+}
+
+div{
+	width:80%;
+	margin:0 auto;
+}
+
+input{
+	display:block;
+	margin:0 0 20px 0;
+	font-size:20px;
+	height:40px;
+	width:100%;
+}
+
+#submit{
+	color:#FFF;
+	background-color:#6292CC;
+	border:none; 
+}
+
+a{
+	text-decoration:none;
+	color:#6292CC;	
+}
+

@@ -9,19 +9,24 @@ $color= ($item[0]["color"]);
 ?>
 
 <html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
 <body>
-	<feildset>
-		<h4>Item Update</h4>
+	<header></header>
+	<div>
+		<h2>Item Update</h2>
 
 		<form action="index.php?action=updateaction"  method="POST">
 
 			<input type="text" name="name" placeholder=<? echo $name ?> />
 			<input type="text" name="color" placeholder=<? echo $color ?> />
 			<input type="hidden" name="id" value=<? echo $id ?> />
-			<input type="submit"/>
+			<input id="submit" type="submit"/>
 
 		</form>
 
-	</feildset>	
+	</div>	
 </body>	
 </html>

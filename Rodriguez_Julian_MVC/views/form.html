@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var cityies = [];
+
+      $('#city').keydown(function(){
+        $.ajax({
+          url:'../models/cityresponse.php',
+          type:'get',
+          data:{
+            cityget:$(this).val()
+          },
+          dataType:'json',
+          
+          success: function(city){
+            for (var i in city){
+              cityies.push(city[i].city+', '+city[i].region)
+            }
+
+              $('#city').autocomplete({
+                source: cityies,
+                delay: 90
+              });
+          }
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+ 
+<div>
+  <form method="post" action="result.php">
+      <label for="city">Enter City </label>
+      <input type="text" id="city" name="city" placeholder="City:" />
+      <input type="submit" id="submit" name="submit">
+  </form>  
+</div>
+ 
+ 
+</body>
+</html>

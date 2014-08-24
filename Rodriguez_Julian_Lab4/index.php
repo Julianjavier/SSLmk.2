@@ -42,9 +42,14 @@ if(isset($_GET["action"])){
 ?>
 
 <html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
 <body>
-	<p><a href="?action=add">ADD NEW</a></p>
-	<feildset>
+	<header></header>
+	<div>
+		<h2><a href="?action=add">ADD NEW</a></h2>
 		<h4>Items</h4>
 
 		<?
@@ -62,7 +67,7 @@ if(isset($_GET["action"])){
 
 		?>
 
-	</feildset>	
+	</div>	
 </body>	
 </html>
 

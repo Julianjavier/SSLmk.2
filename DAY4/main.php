@@ -65,8 +65,4 @@ if(isset($_GET["action"])){
 // 	}
 // }
 ?>
-<html>
-<body>
 
-</body>	
-</html>
